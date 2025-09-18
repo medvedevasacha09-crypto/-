@@ -23,4 +23,4 @@ str_caps = [s.upper() for s in list_str]
 
 print("Основний відсортований список:", sorted_list)
 print("Числа кратні 2:", numbers_even)
-print("Слова прлпасані капсом:", str_caps)
+print("Слова прописані капсом:", str_caps)

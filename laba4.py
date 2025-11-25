@@ -13,7 +13,7 @@ def format_price(price):
 
 # Перевірка наявності товарів
 def check_items(items):
-    result = {}
+    result = {} #створює пустий словник
     for item in items:
         # якщо товар є в магазині і його кількість > 0
         if item in store and store[item] > 0:
@@ -37,7 +37,7 @@ def buy_items(items):
 
     total = 0  # загальна сума покупки
     for item in items:
-        price = store[item]                # беремо ціну товару
+        price = store[item]                #беремо ціну товару
         price_text = format_price(price)   # форматуємо ціну для виводу
         print("Товар:", item)              # показуємо назву товару
         print("Ціна цього товару:", price_text)  # показуємо ціну
